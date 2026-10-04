@@ -1,0 +1,30 @@
+Maya Chen
+maya.chen@example.com | +1 415 555 0136 | linkedin.com/in/mayachen
+
+SUMMARY
+Product analyst with five years of experience turning customer and product data into practical growth decisions. Builds clear dashboards, experiments, and data pipelines for cross-functional teams.
+
+SKILLS
+SQL
+Python
+Product analytics
+Experiment design
+Tableau
+BigQuery
+Stakeholder communication
+
+EXPERIENCE
+Senior Product Analyst | Northstar Labs | 2022–Present
+- Built SQL and Python data pipelines that reduced weekly reporting time by 35%.
+- Designed A/B tests with product and design partners; explained results to executive stakeholders.
+- Created Tableau dashboards used by 12 product teams to monitor retention and activation.
+
+Data Analyst | Greenfield Market | 2020–2022
+- Automated recurring reports and improved data quality checks across customer datasets.
+- Partnered with marketing and sales teams to identify customer retention opportunities.
+
+EDUCATION
+BS, Statistics | University of Washington | 2020
+
+PROJECTS
+Customer churn analysis using Python and SQL.

@@ -1,0 +1,47 @@
+kind = "web"
+previewPath = "/"
+title = "Rezume"
+description = "Rezume compares resumes with job descriptions, explains ATS-readiness signals, and helps create an editable, exportable draft."
+version = "1.0.0"
+id = "artifacts/rezumeai"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23061
+
+[services.development]
+run = "pnpm --filter @workspace/rezumeai run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/rezumeai", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/rezumeai/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23061"
+BASE_PATH = "/"
+
+[[services]]
+name = "streamlit"
+paths = [ "/streamlit" ]
+localPort = 3001
+
+[services.development]
+run = "cd streamlit && python3.12 -m streamlit run app.py --server.address 0.0.0.0 --server.port $PORT --server.baseUrlPath $BASE_PATH --server.headless true"
+
+[services.production.run]
+args = [ "bash", "-lc", "if [ -f artifacts/rezumeai/streamlit/app.py ]; then cd artifacts/rezumeai/streamlit; else cd streamlit; fi && exec python3.12 -m streamlit run app.py --server.address 0.0.0.0 --server.port \"$PORT\" --server.baseUrlPath \"$BASE_PATH\" --server.headless true" ]
+
+[services.production.run.env]
+PORT = "3001"
+BASE_PATH = "/streamlit"
+
+[services.env]
+PORT = "3001"
+BASE_PATH = "/streamlit"

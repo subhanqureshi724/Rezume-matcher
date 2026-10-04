@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 48" role="img" aria-label="Rezume">
+  <rect x="2" y="5" width="38" height="38" rx="11" fill="#285b4f"/>
+  <path d="M13 15h11.5a6 6 0 0 1 0 12H18v7h-5V15Zm5 4v4h6a2 2 0 1 0 0-4h-6Z" fill="#fffdf6"/>
+  <path d="m23 31 3 3 7-8" fill="none" stroke="#b7d2bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <text x="49" y="34" fill="#263d36" font-family="Manrope, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="-1">Rezume</text>
+</svg>

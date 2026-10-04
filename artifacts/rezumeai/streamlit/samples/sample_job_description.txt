@@ -1,0 +1,17 @@
+Product Analyst — Atlas
+
+Atlas is looking for a product analyst to help teams make better decisions using data. You will partner with product, engineering, design, and marketing to define metrics, develop experiments, and communicate findings.
+
+Responsibilities:
+- Analyze product usage and customer retention with SQL and Python.
+- Design and evaluate A/B tests and communicate statistical results.
+- Build dashboards in Tableau or a similar BI tool.
+- Develop reliable data pipelines and improve data quality.
+- Present recommendations to product and executive stakeholders.
+
+Qualifications:
+- 3+ years of product analytics or data analysis experience.
+- Strong SQL, Python, and statistics skills.
+- Experience with experimentation, retention, and activation metrics.
+- Clear written communication and cross-functional collaboration.
+- Experience with BigQuery, Tableau, or similar platforms is a plus.
